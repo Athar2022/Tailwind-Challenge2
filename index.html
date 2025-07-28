@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="rtl font-family bg-gray-50 text-gray-800 ">
+  <header class="h-screen bg-cover bg-center relative"
+    style="background-image: url('src/images/YWU18-12-2022-880808.jpg.webp')">
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <nav class="fixed top-0 w-full bg-black/20 backdrop-blur-sm z-50">
+      <div class="container flex items-center justify-between">
+
+        <!-- ✅ أيقونات اليمين (الوضع الليلي + أيقونة القائمة) -->
+        <div class="flex items-center ">
+          <a href="#" id="toggle-mode" class="text-white text-xl hover:text-yellow-400">
+            <i class="fa-solid fa-moon"></i>
+          </a>
+          <button id="menu-toggle" class="text-white text-2xl md:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="hidden md:flex flex-row-reverse space-x-6 space-x-reverse items-center text-white font-bold">
+          <li><a href="#" class="">الرئيسية</a></li>
+          <li><a href="" class="">من نحن</a></li>
+          <li><a href="" class="">قصص نجاح</a></li>
+          <li><a href="" class="">اتصل بنا</a></li>
+        </ul>
+        <!-- ✅ اللوجو في اليسار -->
+        <img src="src/images/logo.png" alt="Logo" class="w-[80px] m-2">
+      </div>
+
+      <!-- ✅ قائمة الموبايل -->
+      <ul id="mobile-menu" class="hidden flex-col bg-black/60  text-white text-center md:hidden">
+        <li><a href="#" class="block py-2">الرئيسية</a></li>
+        <li><a href="" class="block py-2">من نحن</a></li>
+        <li><a href="" class="block py-2">قصص نجاح</a></li>
+        <li><a href="" class="block py-2">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Start News section -->
+  <section class="py-12 bg-gray-100">
+    <h2 class="section-title">آخر الأخبار</h2>
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="src/images/news/news1.jpg" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <p class="text-lg font-semibold mb-2">حماية المرأة المؤدي إلى تنمية المجتمع</p>
+          <p class="text-sm text-gray-500 mb-4"><i class="fa-regular fa-calendar"></i> 13 يوليو</p>
+          <a href="#" class="text-green-700 font-bold">عرض المزيد <i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="src/images/news/news2.jpg" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <p class="text-lg font-semibold mb-2">اختتام دورة تدريبية في مجال الخياطة لتمكين النساء اقتصادياً</p>
+          <p class="text-sm text-gray-500 mb-4"><i class="fa-regular fa-calendar"></i> 13 يوليو</p>
+          <a href="#" class="text-green-700 font-bold">عرض المزيد <i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+        <img src="src/images/news/news3.jpg" class="w-full h-56 object-cover">
+        <div class="p-4">
+          <p class="text-lg font-semibold mb-2">بيان استنكار </p>
+          <p class="text-sm text-gray-500 mb-4"><i class="fa-regular fa-calendar"></i> 13 يوليو</p>
+          <a href="#" class="text-green-700 font-bold">عرض المزيد <i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End News section -->
+
+
+  <!-- Start Campaigns Section -->
+  <section class="py-12">
+    <h2 class="section-title">الحملات</h2>
+    <div class="container grid grid-cols-1 md:grid-cols-3 gap-6 ">
+
+      <div class="relative h-[350px] w-[350px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-l transition">
+        <div class="absolute top-2 right-2 bg-green-700 text-white px-3 py-1 rounded">16 يوم</div>
+        <img src="src/images/campaigns/camp1.jpg" class="w-full  h-4/5 object-fit">
+        <p class="p-4 text-lg font-semibold text-right">نساء ملهمات</p>
+      </div>
+
+      <div class="relative h-[350px] w-[350px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-l transition">
+        <div class="absolute top-2 right-2 bg-green-700 text-white px-3 py-1 rounded">16 يوم</div>
+        <img src="src/images/campaigns/camp2.jpeg" class="w-full h-4/5 object-cover">
+        <p class="p-4 text-lg font-semibold text-right"> اتحاد نساء اليمن تعز يقيم عرضا مسرحيا توعويا </p>
+      </div>
+
+      <div class="relative h-[350px] w-[350px] bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-l transition">
+        <div class="absolute top-2 right-2 bg-green-700 text-white px-3 py-1 rounded">16 يوم</div>
+        <img src="src/images/campaigns/camp3.png" class="w-full  h-4/5 object-cover">
+        <p class="p-4 text-lg font-semibold text-right"> ماهو دورك لحماية المرأة وتوفير احتياجاتها؟ </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Campaigns Section -->
+
+  <!-- Start Statistics Section -->
+  <section class="py-12 bg-gray-100">
+    <h2 class="section-title">اتحاد نساء اليمن بالأرقام</h2>
+    <div class="container flex flex-wrap justify-center gap-6">
+
+      <div
+        class="w-60 h-60 rounded-full bg-[url('src/images/1.jpg')] bg-cover flex flex-col items-center justify-center text-white shadow-lg">
+        <i class="fa-regular fa-file-lines text-2xl mb-2"></i>
+        <h3 class="text-2xl font-bold"> 100 </h3>
+        <p class="text-lg">مشروع</p>
+      </div>
+
+      <div
+        class="w-60 h-60 rounded-full bg-[url('src/images/YWU2022-11-09-03-31-53-71513.jpg.webp')] bg-cover flex flex-col items-center justify-center text-white shadow-lg">
+        <i class="fa-regular fa-file-lines text-2xl mb-2"></i>
+        <h3 class="text-2xl font-bold"> 1500 </h3>
+        <p class="text-lg">مستهدف</p>
+      </div>
+
+      <div
+        class="w-60 h-60 rounded-full bg-[url('src/images/YWU2022-11-09-03-31-53-71513.jpg.webp')] bg-cover flex flex-col items-center justify-center text-white shadow-lg">
+        <i class="fa-regular fa-file-lines text-2xl mb-2"></i>
+        <h3 class="text-2xl font-bold"> 100 </h3>
+        <p class="text-lg">مشروع</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Statistics Section -->
+
+
+  <!-- Start Parteners Section -->
+  <section class="py-12">
+    <h2 class="section-title">شركاء النجاح</h2>
+    <div class="container grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <img src="src/images/partners/FAO.webp" class="h-28 mx-auto">
+      <img src="src/images/partners/UNFPA.webp" class="h-28 mx-auto">
+      <img src="src/images/partners/UNICEF.webp" class="h-28 mx-auto">
+      <img src="src/images/partners/OXFAM.webp" class="h-28 mx-auto">
+    </div>
+  </section>
+
+  <!-- End Parteners Section -->
+
+  <!-- start Footer Section -->
+  <footer class="bg-gray-200 text-center py-8">
+    <h2 class="section-title">شبكات التواصل الاجتماعي</h2>
+    <div class="flex justify-center space-x-4 space-x-reverse text-green-700 text-3xl mb-4">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+    </div>
+    <p class="text-gray-700">جميع الحقوق محفوظة &copy; 2025 اتحاد نساء اليمن</p>
+  </footer>
+  <!-- End Footer Section -->
+
+  <script>
+
+    // Menu
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    // Dark Mode
+    const toggleMode = document.getElementById('toggle-mode');
+      toggleMode.addEventListener('click', () => {
+        document.body.classList.toggle('dark'); 
+      });
+
+     
+  </script>
+
+
+</body>
+
+</html>
